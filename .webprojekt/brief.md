@@ -1,5 +1,14 @@
 # Exit Code – weboldalbrief
 
+## Kiválasztott design – legújabb döntés
+
+A felhasználó a **3. Szabad tér** koncepciót választotta. A további munka alapja a `koncepcio-3-szabad-ter.html`.
+
+- A korábbi világos, csíkos háttér helyett sötétebb szürke, fekete és fehéres sziklakőhatás követendő; ez felülírja a korábbi világos háttérre vonatkozó előírást.
+- A kör alakú logó négyzetes sarkai ne látszódjanak.
+- A kész Exit Code szólogó teljes oldalszélességű fekete sávban, a korábbinál másfélszer nagyobb méretben jelenjen meg.
+- Az utolsó, „Zsolt / In the rehearsal room” feliratú galériakép kimarad; a forrásfájlt megőrizzük.
+
 **Projekt:** Exit Code – Berlin-based nu metal band
 **Állapot:** Első brief a 2026. október 19-én elmondott igények alapján. Folytatható munkadokumentum; a még hiányzó adatokat nem szabad kitalálni.
 **Szerkezeti alap:** A Keller Kata projekt `.webprojekt/brief.md` dokumentuma. A fodrászati tartalom és arculat nem része ennek a projektnek.
@@ -180,3 +189,79 @@ Ezek belső feladatjelölések: kitalált cím, üres hivatkozás és helykitöl
 - A jelen feladat a brief elkészítése. A weboldal tervezése, a képválogatás és a megvalósítás következő munkafázis.
 - A projekt fájljai a `C:/AI/Exit Code - Website/` mappában maradjanak.
 
+
+## Legújabb megjelenítési pontosítás
+
+A honlapon használt nevek: Adam (gitár; forrásmappája Ádám) és Joel (dob; forrásmappája Zsolt). A fájlútvonalak nem változnak. A háttér egységes, világosabb szürke sziklafal, eltérő sötét cikkcakkos mezők nélkül. A fehér szólogó és körlogó fekete háttere olvadjon bele a sziklafalba; fekete sáv nincs. A két nyitóportré egyszer, távolból érkező, leérkezést és eloszló porfelhőt idéző animációval jelenik meg. Csökkentett mozgás beállítás esetén az effekt kikapcsolt.
+
+## Legfrissebb szín- és fejlécdöntés
+
+A fehér megjelenítési elemeket enyhén sárgás csontszín (#e8dfc7) váltja fel: feliratok, logók és gombok. Ez felülírja a korábbi kizárólag szürkeárnyalatos felületi palettát; a fotók fekete-fehérek maradnak. A Music szekció és a „Beyond the noise, we find each other” rész csontszínű hátteret kap, sötét szöveggel. A szólogó a korábbihoz képest 1,75-ször nagyobb, ismét teljes szélességű fekete sávban, minimális felső és alsó térközzel. A két utolsó galériafelirat: Joel / Drums és Adam / Guitar.
+
+## Kapcsolat és paletta – aktuális finomítás
+
+Világosabb csontszín: #f2ecdc. A zenei rész sötétszürke, a sziklafalból finom átmenettel; a zenei bevezető jobb oldalán körlogó szerepel. A Beyond the noise szekció világos csontszínű marad. A kontaktban a nagy, jobb oldali e-mail és Facebook-hivatkozás hangsúlyos, kék Facebook-jellel; mobilon egymás alá rendeződnek. Az alsó körlogó az eredeti 45 px helyett 135 px. A felhasználó külön megerősítette: az e-mail változatlanul exitcode.theband@gmail.com.
+
+## Legfrissebb döntés: ismét fehér
+
+A csontszín minden felületi elemen semleges fehérre változik; a fotók továbbra is fekete-fehérek. Az alsó három kép (About és a két galériafotó) teljes eredeti képaránnyal, vágás nélkül jelenjen meg, a kezek és cipők megőrzésével. Adam nagyobb About-fotóján a szürke falra, Joel galériafotóján a pólóra Exit Code-körlogó kerül külön szerkesztett másolatban. A forrásképek változatlanul megmaradnak.
+
+## Logós fotók és belépőeffekt – pontosítás
+
+A falra festett EC-logó vízszintes vonalai az akusztikus falpanel illesztéseivel párhuzamosan fussanak, a fal perspektíváját követve. Az utolsó Adam-galériaképre is kerüljön ilyen logó. Joel galériafotóján a pólólogó pár fokkal balra dőljön; Joel nyitófotóján is szerepeljen a pólólogó. A változatok új fájlként, az images mappába mentendők, a korábbi változatok megőrzésével. A szólogó és a két nyitóportré egyszeri, mélységből érkező becsapódás-, üvegrepedés- és füsthatást kap. Az effekt maradéktalanul eltűnik; nincs villogás, végtelen animáció vagy tartós takarás. Csökkentett mozgásnál kikapcsolt.
+
+## Végső animációs egyszerűsítés
+
+A felhasználó elvetette a füstöt és az üvegtörést. A szólogó és a két nyitóportré kis pontból a helyére nagyítva érkezzen meg, egyszeri, könnyű transform/opacity animációval. Nincs füst, repedés, blur, részecske vagy folyamatos effekt. Mobilos terhelés minimalizálandó; csökkentett mozgás esetén nincs animáció. Ez minden korábbi effektleírást felülír.
+
+## Legújabb végső finomítás
+
+A szólogó mögötti fekete sáv teljesen átlátszó; a sziklaháttér látszik. A szólogó újabb 1,5-szeres nagyítást kap. A szólogó és nyitóportrék érkezése háromszor lassabb (3,45 másodperc), továbbra is kizárólag transform és opacity. Az utolsó Adam-galériaképről a fali logó lekerül, ezért ott az eredeti fotót használjuk. Joel nyitó- és galériafotójáról a bal oldalon lógó ing eltávolítandó, természetes falháttérrel; a pólólogó megmarad. A tisztított képek külön változatként mentendők.
+
+## Fejléc és képi felületek – aktuális döntés
+
+A jóváhagyott fotók változatlanul maradnak, minden fotó négy sarka lekerekített. A sziklaháttér egyetlen, rögzített, képernyőt kitöltő felület, ismétlődő csempeillesztés nélkül. A bal felső körlogó és a navigáció betűmérete 1,5-szeres; a Nu metal from Berlin egy sorban jelenik meg, a Nu metal fehér, a from Berlin visszafogottabb szürke. A Music szekció bevezetőjének körlogója eltávolítva.
+
+## Legújabb tipográfiai arányok
+
+Az Exit Code szólogó újabb 1,5-szeres nagyítást kapott. A There is always a way forward címsor kisebb (asztalon legfeljebb 42 px, mobilon 27 px). A Nu metal from Berlin és a fő navigáció betűmérete azonos: 19,5 px.
+
+## Rögzített fejléc és fekete lábléc
+
+A fejléc külön sötét sávban, sticky pozícióval görgetéskor a képernyő tetején marad; a horgonyok felső térköze ehhez igazodik. A lábléc teljesen fekete, a tetején a sziklaháttérből feketébe futó finom átmenettel.
+
+## Fejléc visszaállítása és szekcióátmenetek
+
+A fejléc ismét normál dokumentumfolyamban van: nincs fekete háttérsáv és nincs sticky/fixed viselkedés, görgetéskor eltűnik. A Music sötét felülete felül és alul átlátszóba, a sziklaháttérbe fut. A fehér Beyond the noise blokk ugyanígy a sziklából fehérbe, majd vissza sziklába olvad. A fekete lábléc korábbi felső átmenete megmarad. Ez felülírja a rögzített fejlécre vonatkozó korábbi döntést.
+
+## Beyond the noise – felhős megjelenés
+
+A Beyond the noise és az alatta lévő bekezdés nem teljes szélességű fehér sávban, hanem középre helyezett, puha szélű fehér felhőformában jelenik meg. A szöveg mögött megfelelően fedett, olvasható terület van, a szélek áttetszőn a sziklaháttérbe olvadnak. A felhő statikus, nincs folyamatos animáció.
+
+## Felhő eltávolítva, széles szólogó
+
+A Beyond the noise blokk mögött nincs felhő vagy fehér felület: a szöveg fehér, közvetlenül a sziklaháttéren. A nyitó szólogó a két portré teljes közös szélességét tölti ki, oldalirányban nyújtott betűkkel, kissé magasabban és fényesebb fehéren. A középső körjel eredeti köraránya megmarad; csak a két betűs oldal nyúlik.
+
+## Szólogó: eredeti arányok visszaállítva
+
+Az oldalirányban nyújtott, három részből összerakott szólogó elvetve. Ismét az eredeti szólogó jelenik meg, torzítás nélkül, a korábbi arányos változatnál kissé nagyobb, de a teljes képszélességű nyújtott változatnál kisebb méretben. A fehér képrészletek megjelenítési alpha-kontrasztja erősített, tisztább fehéren, a kopott textúra megtartásával. A fekete képháttér továbbra is átlátszó.
+
+## Tömörebb nyitó rész
+
+Az Exit Code alatti főmondat, kiegészítő mondat és két gomb szorosabb térközökkel jelenik meg, kisebb főmondattal, hogy a nyitóportrék a képernyőn hamarabb látszódjanak. Az öt új képváltozat külön előnézetre készül; még nem része a honlapnak.
+
+## Kivágott alapítói képek beillesztése
+
+Felhasználói döntés: a felső alapítói képeket Adam 004 fekete-fehér, gitáros teljes alakos kivágása és Joel széttárt karú, pólólogós fotójából készült fekete-fehér kivágás váltja fel. Adam balra, Joel jobbra, a szólogóval közös felső sávban, közel azonos fejmagassággal; mobilon a szólogó alatt párban. A korábbi felső Adam 002 fotó az alsó galériába kerül. A szűkre vágott 008-as közös kép és Joel 004 háttér nélküli kivágása is a galériába kerül. A 008 kivágásban az ablak már nem látszik. A színes változatok külön megőrzendők, de nem publikálhatók. Az új fájlok az images/uj-kepvaltozatok mappában vannak. A korábban tiltott csoportképek általános tilalma mellett a csak Adamot és Joelt mutató 008 szerkesztett változat most kifejezetten engedélyezett.
+
+## Képátrendezés visszavonva
+
+A legutóbbi, kivágott alapítói nyitóképekkel és kibővített galériával készült változatot a felhasználó visszavonta. A honlapon ismét Adam 002 és Joel tisztított, pólólogós nyitófotója szerepel; a galéria a korábbi Joel és Adam 004 képpár. Az új kivágások és új közös fotók nem részei az oldalnak, de minden lementett fájlt meg kell őrizni az images/uj-kepvaltozatok mappában. A korábbi tömörebb nyitó térközök megmaradnak.
+
+## Nyitórész végső tömörítése
+
+Az Exit Code szólogó alatti főmondat, kísérőszöveg és gombok minimális függőleges térközzel jelennek meg. A szólogó képdobozának üres függőleges területe csökkentett, hogy a két nyitófotó az oldal megnyitásakor feljebb kerüljön. A jóváhagyott képek és sorrend változatlanok.
+
+## Kompakt lábléc
+
+A lábléc függőleges térközei csökkentettek, az elválasztó vonal közelebb van az elérhetőségekhez. Az alsó körlogó balra kerül, a fejléc logójának méretével (87 px, mobilon 72 px), mellette Exit Code Berlin felirat. A korábbi nagy középső lábléclogó elvetve.

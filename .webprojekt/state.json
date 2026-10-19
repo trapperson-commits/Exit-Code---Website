@@ -3,5 +3,7 @@
   "direction_count": 3,
   "is_redesign": false,
   "source_url": null,
-  "approved": true
+  "approved": true,
+  "selected_direction": 3,
+  "selected_slug": "szabad-ter"
 }

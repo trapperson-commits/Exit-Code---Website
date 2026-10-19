@@ -1,0 +1,3 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="1000" viewBox="0 0 1200 1000">
+<defs><filter id="stone"><feTurbulence type="fractalNoise" baseFrequency=".012 .018" numOctaves="5" seed="12" result="noise"/><feDiffuseLighting in="noise" lighting-color="#d0d0d0" surfaceScale="14" diffuseConstant=".8" result="relief"><feDistantLight azimuth="225" elevation="35"/></feDiffuseLighting><feBlend in="SourceGraphic" in2="relief" mode="multiply"/></filter></defs>
+<rect width="1200" height="1000" fill="#b5b5b5" filter="url(#stone)"/></svg>
