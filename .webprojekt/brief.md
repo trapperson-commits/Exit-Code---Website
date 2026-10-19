@@ -265,3 +265,5 @@ Az Exit Code szólogó alatti főmondat, kísérőszöveg és gombok minimális 
 ## Kompakt lábléc
 
 A lábléc függőleges térközei csökkentettek, az elválasztó vonal közelebb van az elérhetőségekhez. Az alsó körlogó balra kerül, a fejléc logójának méretével (87 px, mobilon 72 px), mellette Exit Code Berlin felirat. A korábbi nagy középső lábléclogó elvetve.
+
+A mai utolsó finomítás: a There is always a way forward főmondat világosszürke (#c4c4c4), hogy elkülönüljön a fehér szólogótól.
