@@ -187,6 +187,61 @@ html{scroll-padding-top:25px}
 @media(max-width:760px){.contact{padding-top:100px;padding-bottom:16px}.contact-links{margin-top:8px}.footer-row{margin-top:22px;padding-top:12px}.footer-row .footer-brand img{width:72px;height:72px}.footer-brand{gap:10px}.footer-brand span{font-size:12px}}
 
 .hero-intro h1{color:#c4c4c4}
+
+/* Original lettering reunited; small emblem follows the final E. */
+.wordmark-band{height:clamp(110px,15vw,185px);margin:0;padding:0;overflow:visible}
+.wordmark{display:block;width:min(900px,90vw);height:100%;max-width:100%;flex-shrink:1;filter:url(#wordmark-alpha)!important;overflow:visible}
+.hero-intro{padding-bottom:14px}
+.hero-intro p{margin:1px 0 8px}
+.hero-intro .actions{margin-top:0}
+#hero-heading{text-align:center;color:#c4c4c4;font-size:clamp(22px,2.4vw,35px);font-weight:400;letter-spacing:-.055em;line-height:1.15;margin:18px 0 0}
+@media(max-width:760px){.wordmark-band{height:105px}.wordmark{width:100%;height:100%}.hero-intro{padding-bottom:13px}.hero-intro p{margin:0 0 7px}#hero-heading{font-size:23px;margin-top:16px}}
+
+.wordmark-band{overflow:visible;display:flex;justify-content:center}
+.wordmark{width:min(1000px,100%);max-width:100%;height:100%;overflow:visible}
+@media(max-width:760px){.wordmark{width:100%;height:100%}}
+
+/* Readable supporting text, captions and links. */
+.hero-intro p{font-size:17px;line-height:1.5}
+.hero-foot{font-size:15px;line-height:1.5}
+.section-head p{font-size:17px;line-height:1.7}
+.belief p,.about-copy p,.live p{font-size:18px;line-height:1.8}
+.members{font-size:18px}.members span{font-size:15px;line-height:1.6}
+.text-link,.download{font-size:16px}
+.gallery-grid figcaption,.portrait-panorama figcaption{font-size:15px;line-height:1.5}
+.track small{font-size:14px}
+.contact p{font-size:17px}.footer-row,.footer-brand span{font-size:14px}
+@media(max-width:760px){.hero-intro p{font-size:16px}.hero-foot{font-size:14px}.section-head p{font-size:16px}.belief p,.about-copy p,.live p{font-size:17px;line-height:1.75}.members{font-size:17px}.members span{font-size:15px}.gallery-grid figcaption,.portrait-panorama figcaption{font-size:14px}.contact p{font-size:16px}.footer-brand span{font-size:14px}}
+.hero-foot{justify-content:flex-end}
+
+.actions{gap:25px}
+.actions .button{font-size:16px;min-height:52px;padding:14px 30px}
+.actions .button.secondary:hover,.actions .button.secondary:focus-visible{background:#000;color:#fff;border-color:#000}
+@media(max-width:760px){.actions{gap:18px}.actions .button{font-size:15px;min-height:50px;padding:13px 24px}}
+
+/* CTA columns match the portrait columns exactly. */
+.actions{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:12px;width:100%;align-items:center;justify-items:center}
+.actions .button{width:max-content;max-width:100%;text-align:center}
+@media(max-width:760px){.actions{gap:7px}.actions .button{padding:13px 18px;font-size:15px}}
+
+.actions .button:hover,.actions .button:focus-visible{background:#333;color:#fff}
+.actions .button.secondary:hover,.actions .button.secondary:focus-visible{background:#333;color:#fff;border-color:#fff}
+
+/* Compact centered CTA pair, slightly wider gap than the photos. */
+.actions{display:flex;justify-content:center;align-items:center;gap:22px;width:100%;flex-wrap:wrap}
+.actions .button{width:auto;max-width:100%;font-size:15px;min-height:47px;padding:11px 25px}
+@media(max-width:760px){.actions{gap:16px}.actions .button{font-size:14px;min-height:45px;padding:11px 19px}}
+
+/* Exact portrait-column alignment, including identical central gutter. */
+.actions{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:12px;width:100%;justify-content:normal;align-items:stretch}
+.actions .button{width:100%;max-width:none;justify-self:stretch;min-height:47px;padding:11px 18px;font-size:15px}
+@media(max-width:760px){.actions{gap:7px}.actions .button{width:100%;min-height:45px;padding:11px 8px;font-size:14px}}
+
+/* Compact buttons anchored to the inner edges of the portrait columns. */
+.actions .button{width:auto;max-width:100%;min-height:47px;padding:11px 25px;font-size:15px}
+.actions .button:first-child{justify-self:end}
+.actions .button:last-child{justify-self:start}
+@media(max-width:760px){.actions .button{width:auto;max-width:100%;min-height:45px;padding:11px 19px;font-size:14px}}
 </style>
 </head>
 <body>
@@ -194,7 +249,7 @@ html{scroll-padding-top:25px}
 <a class="skip" href="#main">Skip to content</a><a class="preview" href="index.html">Design preview 3 / Szabad tér · View all concepts</a>
 <div class="header-band"><header class="site-header wrap"><a class="brand" href="#main" aria-label="Exit Code home"><img src="Név_Logo_Weboldalhoz/Jók/exit-code-LOGO_arculat-jo-001.jpg" alt="Exit Code emblem"><span class="brand-tagline"><strong>Nu metal</strong> <span class="brand-origin">from Berlin</span></span></a><button class="menu-button" aria-expanded="false" aria-controls="navigation">Menu</button><nav id="navigation" aria-label="Main navigation"><a href="#music">Music</a><a href="#about">Our story</a><a href="#live">Live</a><a href="#gallery">Photos</a><a href="#contact">Contact</a></nav></header></div>
 <main id="main">
-<section class="wrap" aria-labelledby="hero-heading"><div class="hero-intro"><div class="wordmark-band"><img class="wordmark" src="Név_Logo_Weboldalhoz/Jók/exit-code-arculat-jo-003.jpg" alt="Exit Code"></div><h1 id="hero-heading">There is always a way forward.</h1><p>Break beyond limits. Find yourself. Together.</p><div class="actions"><a class="button" href="#music">Listen to our music</a><a class="button secondary" href="#live">Upcoming shows</a></div></div><div class="portrait-panorama"><figure><img src="Képek/Ádám/exit-code-adam-besorolatlan-002.jpg" alt="Adam playing guitar in the rehearsal room" fetchpriority="high"><figcaption>Adam / Guitar</figcaption></figure><figure><img src="images/joel-hero-logo-clean.png" alt="Joel seated at the drums, holding drumsticks" fetchpriority="high"><figcaption>Joel / Drums</figcaption></figure></div><div class="hero-foot"><span>Two people. One shared belief.</span><span>Berlin, Germany</span></div></section>
+<section class="wrap" aria-labelledby="hero-heading"><div class="hero-intro"><div class="wordmark-band"><svg class="wordmark" viewBox="-65 -38 1065 275" role="img" aria-label="Exit Code" xmlns="http://www.w3.org/2000/svg"><defs><clipPath id="exit-part"><path d="M0 0H426V50H390V198H0Z"/></clipPath><clipPath id="code-part"><rect x="505" y="0" width="430" height="198"/></clipPath></defs><g clip-path="url(#exit-part)"><image href="Név_Logo_Weboldalhoz/Jók/exit-code-arculat-jo-003.jpg" x="-478" y="-238" width="1920" height="675"/></g><g clip-path="url(#code-part)"><image href="Név_Logo_Weboldalhoz/Jók/exit-code-arculat-jo-003.jpg" x="-473" y="-238" width="1920" height="675"/></g><image href="Név_Logo_Weboldalhoz/Jók/exit-code-LOGO_arculat-jo-001.jpg" x="935" y="-30" width="60" height="60"/></svg></div><p>Break beyond limits.</p><div class="actions"><a class="button" href="#music">Listen to our music</a><a class="button secondary" href="#live">Upcoming shows</a></div></div><div class="portrait-panorama"><figure><img src="Képek/Ádám/exit-code-adam-besorolatlan-002.jpg" alt="Adam playing guitar in the rehearsal room" fetchpriority="high"><figcaption>Adam / Guitar</figcaption></figure><figure><img src="images/joel-hero-logo-clean.png" alt="Joel seated at the drums, holding drumsticks" fetchpriority="high"><figcaption>Joel / Drums</figcaption></figure></div><h1 id="hero-heading">There is always a way forward.</h1><div class="hero-foot"><span>Berlin, Germany</span></div></section>
 <section id="music" class="section wrap"><div class="section-head"><h2>Turn it up.<br>Let it out.</h2><p>Heavy music. An open mind.<br>Listen to Exit Code, wherever you are.</p></div><div class="music-grid"><article class="track"><div class="track-head"><h3>Insane</h3><a class="download" href="Music%20-%20Zene/Insane%20-%20Exit%20Code.wav" download>Download WAV</a></div><audio controls preload="none" aria-label="Listen to Insane by Exit Code"><source src="Music%20-%20Zene/Insane%20-%20Exit%20Code.wav" type="audio/wav">Your browser does not support audio. Use the download link above.</audio><small>Exit Code</small></article><article class="track"><div class="track-head"><h3>Perfect</h3><a class="download" href="Music%20-%20Zene/Perfect%20-%20Exit%20Code.wav" download>Download WAV</a></div><audio controls preload="none" aria-label="Listen to Perfect by Exit Code"><source src="Music%20-%20Zene/Perfect%20-%20Exit%20Code.wav" type="audio/wav">Your browser does not support audio. Use the download link above.</audio><small>Exit Code</small></article></div></section>
 <section class="belief"><div class="wrap"><h2>Beyond the noise,<br>we find each other.</h2><p>Life can be heavy. Our music makes room for that — and for what comes next. A way beyond limiting patterns. A return to ourselves, to nature, and to the strength we find together.</p></div></section>
 <section id="about" class="section wrap"><div class="about-grid"><img class="about-image" src="images/adam-wall-logo-v2.png" alt="Adam with his guitar during rehearsal" loading="lazy"><div class="about-copy"><h2>A shared sound.<br>A shared direction.</h2><p>We are Adam and Joel. Exit Code is our nu metal band from Berlin, built around one belief: however hard life gets, there is always a way forward.</p><p>Our name means stepping beyond the systems and patterns that hold us back. Finding yourself. Creating something together. Respecting people, animals and the Earth we share.</p><div class="members"><div>Adam<span>Guitar / Co-founder</span></div><div>Joel<span>Drums / Co-founder</span></div></div></div></div></section>

@@ -267,3 +267,27 @@ Az Exit Code szólogó alatti főmondat, kísérőszöveg és gombok minimális 
 A lábléc függőleges térközei csökkentettek, az elválasztó vonal közelebb van az elérhetőségekhez. Az alsó körlogó balra kerül, a fejléc logójának méretével (87 px, mobilon 72 px), mellette Exit Code Berlin felirat. A korábbi nagy középső lábléclogó elvetve.
 
 A mai utolsó finomítás: a There is always a way forward főmondat világosszürke (#c4c4c4), hogy elkülönüljön a fehér szólogótól.
+
+## Szójel elrendezése és nyitómondat
+
+A szójel közepéről az EC-körjel a CODE utolsó E betűjének jobb felső sarkához kerül, kicsi felső jelként. A két szó eredeti betűképe megmarad. A There is always a way forward főmondat a két nyitókép alá kerül, szürkén. Felül csak Break beyond limits. és a két CTA marad szoros térközzel; Find yourself és Together törölve ebből a nyitó kísérőszövegből.
+
+A szójel pontosítása: EXIT CODE külön szóközzel, teljes T betűvel. A szöveg önmagában középre igazított; az utolsó E jobb felső sarkánál lévő kis EC-jel nem számít bele a szöveg középre igazításába.
+
+## Olvashatóbb kísérőszövegek
+
+A Two people. One shared belief. sor megmarad. A kísérőszövegek, helymegjelölés, bemutatkozó bekezdések, tagnevek és szerepkörök, koncerttájékoztatás, galériabevezető és képaláírások betűmérete növelt: jellemzően 16–18 px szöveg, 14–15 px képaláírás. Mobilon is olvasható méretek, arányos sorközzel.
+
+Legújabb döntés: a Two people. One shared belief. sor törlendő; a Berlin, Germany helymegjelölés megmarad. Ez felülírja az előző megtartási kérést.
+
+A nyitó CTA-gombok nagyobbak (16 px felirat, minimum 52 px magasság; mobilon 15 px / 50 px), köztük 25 px távolság (mobilon 18 px). Az Upcoming shows háttere hover és billentyűzetfókusz esetén fekete, fehér felirattal.
+
+A két nyitógomb két egyforma szélességű oszlopban, a két portré középvonalához igazodik. A rács térköze a portrékéval egyezik: asztalon 12 px, mobilon 7 px.
+
+A két nyitógomb hover/fókusz háttere egységes sötétszürke (#333). Az Upcoming shows fehér kerete hover/fókusz alatt is megmarad; ez felülírja a korábbi fekete hover döntést.
+
+Legújabb CTA-elrendezés: a két gomb ismét középen, egymás mellett, közelebb egymáshoz (22 px, mobilon 16 px rés), a portrék résénél nagyobb távolsággal. Enyhén kisebb méret: 15 px felirat, minimum 47 px magasság; mobilon 14 px / 45 px. Ez felülírja a fotóoszlopokhoz külön középre igazított gombelrendezést.
+
+CTA-igazítás pontosítása: a gombok a portrék két teljes szélességű oszlopát követik, azonos középső réssel (12 px, mobilon 7 px). Mindkét gomb a saját fotója teljes szélességében jelenik meg, így a belső és külső élek egybeesnek. Ez felülírja a kompakt, középen csoportosított gombpárt.
+
+Végső CTA-pontosítás: a kisebb, tartalomszélességű gombok a portréoszlopok belső széléhez igazodnak: bal gomb justify-self:end, jobb gomb justify-self:start. A középső rés továbbra is a képekével azonos (12 px, mobilon 7 px). A külső szélek nem érnek ki a fotók külső széléig.

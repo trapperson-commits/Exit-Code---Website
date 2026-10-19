@@ -103,3 +103,7 @@ A legutóbbi, kivágott alapítói nyitóképekkel és kibővített galériával
 ## Kompakt lábléc
 
 A lábléc függőleges térközei csökkentettek, az elválasztó vonal közelebb van az elérhetőségekhez. Az alsó körlogó balra kerül, a fejléc logójának méretével (87 px, mobilon 72 px), mellette Exit Code Berlin felirat. A korábbi nagy középső lábléclogó elvetve.
+
+## Szójel elrendezése és nyitómondat
+
+A szójel közepéről az EC-körjel a CODE utolsó E betűjének jobb felső sarkához kerül, kicsi felső jelként. A két szó eredeti betűképe megmarad. A There is always a way forward főmondat a két nyitókép alá kerül, szürkén. Felül csak Break beyond limits. és a két CTA marad szoros térközzel; Find yourself és Together törölve ebből a nyitó kísérőszövegből.
