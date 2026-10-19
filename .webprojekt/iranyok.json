@@ -1,0 +1,35 @@
+{
+  "directions": [
+    {
+      "id": 1,
+      "slug": "kobe-vesett",
+      "name": "Kőbe vésett",
+      "fonts": {
+        "heading": "Oswald",
+        "body": "Source Sans 3",
+        "google_fonts_url": "https://fonts.googleapis.com/css2?family=Oswald:wght@400;600;700&family=Source+Sans+3:wght@400;600&display=swap"
+      }
+    },
+    {
+      "id": 2,
+      "slug": "toresvonal",
+      "name": "Törésvonal",
+      "fonts": {
+        "heading": "Barlow Condensed",
+        "body": "IBM Plex Sans",
+        "google_fonts_url": "https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@400;600;700&family=IBM+Plex+Sans:wght@400;600&display=swap"
+      }
+    },
+    {
+      "id": 3,
+      "slug": "szabad-ter",
+      "name": "Szabad tér",
+      "fonts": {
+        "heading": "Manrope",
+        "body": "Lora",
+        "google_fonts_url": "https://fonts.googleapis.com/css2?family=Manrope:wght@400;600;700&family=Lora:wght@400;600&display=swap"
+      }
+    }
+  ],
+  "total": 3
+}
