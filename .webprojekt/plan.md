@@ -1,6 +1,6 @@
 # Exit Code – három kezdőoldal-koncepció terve
 
-Állapot: jóváhagyásra előkészített terv. A prototípusok még nem épültek meg.
+Állapot: a felhasználó jóváhagyta; mindhárom prototípus elkészült.
 
 ## Közös alap
 
