@@ -1,6 +1,7 @@
 <!doctype html>
 <html lang="en">
 <head>
+<script>if(!matchMedia("(prefers-reduced-motion: reduce)").matches)document.documentElement.classList.add("motion-ready");</script>
 <meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
 <title>Exit Code — A way forward</title><meta name="description" content="Exit Code. Nu metal from Berlin. Heavy music, human connection, and a way forward.">
 <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700&family=Lora:wght@400;500&display=swap" rel="stylesheet"><script src="https://cdn.tailwindcss.com"></script>
@@ -255,6 +256,13 @@ body:before{inset:auto;top:0;left:0;width:100%;height:var(--rock-height,100vh);b
  nav a:hover,nav a:focus-visible{background:rgba(255,255,255,.1);border-radius:5px}
  #about{padding:110px 5%;background:linear-gradient(to bottom,transparent,#181818 100px,#181818 calc(100% - 100px),transparent)}
 }
+/* Hide arrival artwork before the first paint, until decoded and animated. */
+html.motion-ready .wordmark-band:not(.impact) .wordmark,
+html.motion-ready .portrait-panorama:not(.arriving) figure{opacity:0;transform:translateY(-40px) scale(.015)}
+.header-band{position:sticky;top:0;z-index:50;background:rgba(30,30,30,.32);backdrop-filter:blur(10px);-webkit-backdrop-filter:blur(10px)}
+html{scroll-padding-top:calc(var(--header-height,130px) + 16px)}
+@media(max-width:760px){nav{top:100%}}
+@media(prefers-reduced-motion:reduce){html.motion-ready .wordmark-band .wordmark,html.motion-ready .portrait-panorama figure{opacity:1;transform:none}}
 </style>
 
 <link rel="icon" href="images/favicon/favicon.ico" sizes="any">
@@ -284,7 +292,14 @@ if(!matchMedia('(prefers-reduced-motion: reduce)').matches){
 }
 
 const wordmarkBand=document.querySelector('.wordmark-band');
-if(!matchMedia('(prefers-reduced-motion: reduce)').matches){requestAnimationFrame(()=>wordmarkBand.classList.add('impact'));}
+if(!matchMedia('(prefers-reduced-motion: reduce)').matches){
+ const artwork=[...wordmarkBand.querySelectorAll('image')].map(el=>{const img=new Image();img.src=el.getAttribute('href');return img.decode().catch(()=>{});});
+ Promise.all(artwork).then(()=>requestAnimationFrame(()=>wordmarkBand.classList.add('impact')));
+}
+const headerBand=document.querySelector('.header-band');
+const updateHeaderHeight=()=>document.documentElement.style.setProperty('--header-height',headerBand.getBoundingClientRect().height+'px');
+updateHeaderHeight();
+new ResizeObserver(updateHeaderHeight).observe(headerBand);
 
 if(!CSS.supports('height','100lvh')){
  let rockWidth=window.innerWidth;

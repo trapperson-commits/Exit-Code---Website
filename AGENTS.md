@@ -115,3 +115,7 @@ A honlap hét ténylegesen használt raszteres képe optimalizált, szürkeárny
 ## Mobilos javítás – 2026. október 20.
 
 A Menu gomb fehér, jól olvasható. A mobil lenyíló menü sötét, részben áttetsző, 12 px háttérhomályosítással, nagy fehér linkekkel és finom elválasztókkal. A szikla fix rétege stabil 100lvh magasságú; régebbi böngészőben csak szélesség/orientációváltáskor méreteződik, a böngészősáv változását nem követi. Az About (A shared sound, A shared direction) teljes szélességű, sziklából sötétbe és vissza átmenő felületet kapott a Music mintájára.
+
+## Áttetsző rögzített fejléc és villanásmentes érkezés
+
+A fejléc ismét sticky, áttetsző, enyhén homályosított felülettel; a dokumentumfolyamban helyet foglal, a horgonyok térköze követi a magasságát. A szólogó és nyitóképek már az első kirajzolás előtt rejtett kezdőállapotot kapnak, és csak a képek dekódolása után indul az érkezés. Csökkentett mozgásnál azonnal láthatók; JavaScript nélkül is elérhetők.
