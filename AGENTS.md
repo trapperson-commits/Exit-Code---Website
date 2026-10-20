@@ -123,3 +123,7 @@ A fejléc ismét sticky, áttetsző, enyhén homályosított felülettel; a doku
 ## Fejléc átlátszóságának finomítása
 
 A sticky fejléc háttérszín nélkül, minimális 2 px homályosítással jelenik meg. A fejléc körlogójának fekete részei átlátszóak, csak a fehér rajzolat marad. A navigáció fehér, a mobilmenü enyhén áttetsző, 3 px homályosítású felület.
+
+## Fejléc- és lábléclogó mérete
+
+Mindkét körlogó a korábbi méret 80%-a: asztalon 69,6 px, mobilon 57,6 px. A nyitó szólogó mérete változatlan.
