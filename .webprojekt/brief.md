@@ -295,3 +295,7 @@ Végső CTA-pontosítás: a kisebb, tartalomszélességű gombok a portréoszlop
 ## Webes képoptimalizálás – 2026. október 20.
 
 A honlap hét ténylegesen használt raszteres képe optimalizált, szürkeárnyalatos WebP-másolatot kapott az images/optimalizalt mappában. Minden fájl 66 KiB alatti; az összesített méret kb. 353,5 KiB a korábbi 20,45 MiB helyett. A forrásfájlokat nem módosítottuk. A szólogó 1920×675-ös koordinátarendszere megmaradt, mert az SVG-kivágás ezeket a koordinátákat használja. A méretjegyzék: images/optimalizalt/meretjegyzek.json. Új Netlify-feltöltéshez a build után keletkező dist mappát kell használni.
+
+## Mobilos javítás – 2026. október 20.
+
+A Menu gomb fehér, jól olvasható. A mobil lenyíló menü sötét, részben áttetsző, 12 px háttérhomályosítással, nagy fehér linkekkel és finom elválasztókkal. A szikla fix rétege stabil 100lvh magasságú; régebbi böngészőben csak szélesség/orientációváltáskor méreteződik, a böngészősáv változását nem követi. Az About (A shared sound, A shared direction) teljes szélességű, sziklából sötétbe és vissza átmenő felületet kapott a Music mintájára.

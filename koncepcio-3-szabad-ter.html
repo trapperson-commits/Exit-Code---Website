@@ -242,6 +242,19 @@ html{scroll-padding-top:25px}
 .actions .button:first-child{justify-self:end}
 .actions .button:last-child{justify-self:start}
 @media(max-width:760px){.actions .button{width:auto;max-width:100%;min-height:45px;padding:11px 19px;font-size:14px}}
+
+/* Stable large-viewport stone layer: browser toolbar changes do not rescale it. */
+body:before{inset:auto;top:0;left:0;width:100%;height:var(--rock-height,100vh);backface-visibility:hidden;transform:translateZ(0)}
+@supports(height:100lvh){body:before{height:100lvh}}
+#about{width:100%;max-width:none;padding:145px max(5%,calc((100% - 1360px)/2));background:linear-gradient(to bottom,transparent 0,rgba(0,0,0,.65) 65px,#181818 145px,#181818 calc(100% - 145px),rgba(0,0,0,.65) calc(100% - 65px),transparent 100%)}
+.menu-button{color:#fff;border-color:rgba(255,255,255,.8);font-weight:600}
+@media(max-width:760px){
+ nav,nav.open{background:rgba(22,22,22,.68);color:#fff;backdrop-filter:blur(12px);-webkit-backdrop-filter:blur(12px);border:1px solid rgba(255,255,255,.38);border-radius:14px;padding:12px 20px;gap:0;box-shadow:0 12px 30px rgba(0,0,0,.2)}
+ nav a{color:#fff;font-size:20px;font-weight:600;padding:14px 4px;line-height:1.4;text-shadow:0 1px 3px #000}
+ nav a+a{border-top:1px solid rgba(255,255,255,.2)}
+ nav a:hover,nav a:focus-visible{background:rgba(255,255,255,.1);border-radius:5px}
+ #about{padding:110px 5%;background:linear-gradient(to bottom,transparent,#181818 100px,#181818 calc(100% - 100px),transparent)}
+}
 </style>
 
 <link rel="icon" href="images/favicon/favicon.ico" sizes="any">
@@ -272,6 +285,13 @@ if(!matchMedia('(prefers-reduced-motion: reduce)').matches){
 
 const wordmarkBand=document.querySelector('.wordmark-band');
 if(!matchMedia('(prefers-reduced-motion: reduce)').matches){requestAnimationFrame(()=>wordmarkBand.classList.add('impact'));}
+
+if(!CSS.supports('height','100lvh')){
+ let rockWidth=window.innerWidth;
+ const sizeRock=()=>document.documentElement.style.setProperty('--rock-height',Math.max(window.innerHeight,window.screen.height)+'px');
+ sizeRock();
+ window.addEventListener('resize',()=>{if(Math.abs(window.innerWidth-rockWidth)>40){rockWidth=window.innerWidth;sizeRock();}},{passive:true});
+}
 </script>
 </body>
 </html>
