@@ -291,3 +291,7 @@ Legújabb CTA-elrendezés: a két gomb ismét középen, egymás mellett, közel
 CTA-igazítás pontosítása: a gombok a portrék két teljes szélességű oszlopát követik, azonos középső réssel (12 px, mobilon 7 px). Mindkét gomb a saját fotója teljes szélességében jelenik meg, így a belső és külső élek egybeesnek. Ez felülírja a kompakt, középen csoportosított gombpárt.
 
 Végső CTA-pontosítás: a kisebb, tartalomszélességű gombok a portréoszlopok belső széléhez igazodnak: bal gomb justify-self:end, jobb gomb justify-self:start. A középső rés továbbra is a képekével azonos (12 px, mobilon 7 px). A külső szélek nem érnek ki a fotók külső széléig.
+
+## Webes képoptimalizálás – 2026. október 20.
+
+A honlap hét ténylegesen használt raszteres képe optimalizált, szürkeárnyalatos WebP-másolatot kapott az images/optimalizalt mappában. Minden fájl 66 KiB alatti; az összesített méret kb. 353,5 KiB a korábbi 20,45 MiB helyett. A forrásfájlokat nem módosítottuk. A szólogó 1920×675-ös koordinátarendszere megmaradt, mert az SVG-kivágás ezeket a koordinátákat használja. A méretjegyzék: images/optimalizalt/meretjegyzek.json. Új Netlify-feltöltéshez a build után keletkező dist mappát kell használni.

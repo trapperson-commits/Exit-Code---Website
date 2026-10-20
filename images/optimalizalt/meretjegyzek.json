@@ -1,0 +1,65 @@
+[
+  {
+    "source": "Képek/Ádám/exit-code-adam-besorolatlan-002.jpg",
+    "optimized": "images/optimalizalt/adam-nyito.webp",
+    "source_bytes": 7045120,
+    "bytes": 65336,
+    "width": 1280,
+    "height": 853,
+    "quality": 62
+  },
+  {
+    "source": "Képek/Ádám/exit-code-adam-besorolatlan-004.jpg",
+    "optimized": "images/optimalizalt/adam-galeria.webp",
+    "source_bytes": 7569408,
+    "bytes": 67094,
+    "width": 1152,
+    "height": 768,
+    "quality": 62
+  },
+  {
+    "source": "images/adam-wall-logo-v2.png",
+    "optimized": "images/optimalizalt/adam-fali-logo.webp",
+    "source_bytes": 2377697,
+    "bytes": 67478,
+    "width": 1152,
+    "height": 768,
+    "quality": 66
+  },
+  {
+    "source": "images/joel-hero-logo-clean.png",
+    "optimized": "images/optimalizalt/joel-nyito.webp",
+    "source_bytes": 2313417,
+    "bytes": 64502,
+    "width": 1152,
+    "height": 768,
+    "quality": 62
+  },
+  {
+    "source": "images/joel-gallery-logo-clean.png",
+    "optimized": "images/optimalizalt/joel-galeria.webp",
+    "source_bytes": 2101112,
+    "bytes": 66092,
+    "width": 1400,
+    "height": 933,
+    "quality": 58
+  },
+  {
+    "source": "Név_Logo_Weboldalhoz/Jók/exit-code-LOGO_arculat-jo-001.jpg",
+    "optimized": "images/optimalizalt/ec-korlogo.webp",
+    "source_bytes": 11731,
+    "bytes": 10138,
+    "width": 482,
+    "height": 472,
+    "quality": 95
+  },
+  {
+    "source": "Név_Logo_Weboldalhoz/Jók/exit-code-arculat-jo-003.jpg",
+    "optimized": "images/optimalizalt/exit-code-szologo.webp",
+    "source_bytes": 25027,
+    "bytes": 21370,
+    "width": 1920,
+    "height": 675,
+    "quality": 95
+  }
+]

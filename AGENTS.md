@@ -107,3 +107,7 @@ A lábléc függőleges térközei csökkentettek, az elválasztó vonal közele
 ## Szójel elrendezése és nyitómondat
 
 A szójel közepéről az EC-körjel a CODE utolsó E betűjének jobb felső sarkához kerül, kicsi felső jelként. A két szó eredeti betűképe megmarad. A There is always a way forward főmondat a két nyitókép alá kerül, szürkén. Felül csak Break beyond limits. és a két CTA marad szoros térközzel; Find yourself és Together törölve ebből a nyitó kísérőszövegből.
+
+## Webes képoptimalizálás – 2026. október 20.
+
+A honlap hét ténylegesen használt raszteres képe optimalizált, szürkeárnyalatos WebP-másolatot kapott az images/optimalizalt mappában. Minden fájl 66 KiB alatti; az összesített méret kb. 353,5 KiB a korábbi 20,45 MiB helyett. A forrásfájlokat nem módosítottuk. A szólogó 1920×675-ös koordinátarendszere megmaradt, mert az SVG-kivágás ezeket a koordinátákat használja. A méretjegyzék: images/optimalizalt/meretjegyzek.json. Új Netlify-feltöltéshez a build után keletkező dist mappát kell használni.
