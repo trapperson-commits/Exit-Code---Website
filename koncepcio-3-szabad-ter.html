@@ -259,10 +259,14 @@ body:before{inset:auto;top:0;left:0;width:100%;height:var(--rock-height,100vh);b
 /* Hide arrival artwork before the first paint, until decoded and animated. */
 html.motion-ready .wordmark-band:not(.impact) .wordmark,
 html.motion-ready .portrait-panorama:not(.arriving) figure{opacity:0;transform:translateY(-40px) scale(.015)}
-.header-band{position:sticky;top:0;z-index:50;background:rgba(30,30,30,.32);backdrop-filter:blur(10px);-webkit-backdrop-filter:blur(10px)}
+.header-band{position:sticky;top:0;z-index:50;background:transparent;backdrop-filter:blur(2px);-webkit-backdrop-filter:blur(2px)}
 html{scroll-padding-top:calc(var(--header-height,130px) + 16px)}
 @media(max-width:760px){nav{top:100%}}
 @media(prefers-reduced-motion:reduce){html.motion-ready .wordmark-band .wordmark,html.motion-ready .portrait-panorama figure{opacity:1;transform:none}}
+/* Transparent header artwork and a barely frosted navigation surface. */
+.header-band .brand img{filter:url(#wordmark-alpha);mix-blend-mode:normal}
+.header-band nav a{color:#fff;text-shadow:0 1px 3px rgba(0,0,0,.7)}
+@media(max-width:760px){nav,nav.open{background:rgba(22,22,22,.28);backdrop-filter:blur(3px);-webkit-backdrop-filter:blur(3px)}}
 </style>
 
 <link rel="icon" href="images/favicon/favicon.ico" sizes="any">

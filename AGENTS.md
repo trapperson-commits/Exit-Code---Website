@@ -119,3 +119,7 @@ A Menu gomb fehér, jól olvasható. A mobil lenyíló menü sötét, részben �
 ## Áttetsző rögzített fejléc és villanásmentes érkezés
 
 A fejléc ismét sticky, áttetsző, enyhén homályosított felülettel; a dokumentumfolyamban helyet foglal, a horgonyok térköze követi a magasságát. A szólogó és nyitóképek már az első kirajzolás előtt rejtett kezdőállapotot kapnak, és csak a képek dekódolása után indul az érkezés. Csökkentett mozgásnál azonnal láthatók; JavaScript nélkül is elérhetők.
+
+## Fejléc átlátszóságának finomítása
+
+A sticky fejléc háttérszín nélkül, minimális 2 px homályosítással jelenik meg. A fejléc körlogójának fekete részei átlátszóak, csak a fehér rajzolat marad. A navigáció fehér, a mobilmenü enyhén áttetsző, 3 px homályosítású felület.
