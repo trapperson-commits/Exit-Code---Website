@@ -127,3 +127,27 @@ A sticky fejléc háttérszín nélkül, minimális 2 px homályosítással jele
 ## Fejléc- és lábléclogó mérete
 
 Mindkét körlogó a korábbi méret 80%-a: asztalon 69,6 px, mobilon 57,6 px. A nyitó szólogó mérete változatlan.
+
+## Kreditkímélő mentési és publikálási szabály – 2026-10-20
+
+A felhasználó Netlify-keretét tartalékolja. A fájlok helyi mentése automatikusan engedélyezett. Git commit előtt külön kérdezz rá, ha a felhasználó az adott commitot még nem kérte kifejezetten. GitHub push és éles Netlify-közzététel előtt külön, egyértelmű engedély szükséges; a helyi mentés vagy helyi commit engedélye ezt nem jelenti. A master ágra push automatikus éles telepítést indít, ezért ezt közzétételként kell kezelni. Több módosítást gyűjts össze egy közzétételbe. Ezt a szabálymódosítást is csak helyben mentjük, commit és push nélkül. A felhasználó ugyanezt szeretné a Keller Kata és harmadik weboldal projektjében is; azok projektútmutatóiba külön átvezetendő, amikor hozzáférünk az adott munkamappához.
+
+## Kizárólag helyi mentés – 2026-10-22
+
+Minden módosítást folyamatosan fájlba kell menteni a laptopon, a projektmappában. A folytatáshoz szükséges állapotot helyi projektjegyzetben is rögzíteni kell. Automatikus commit, GitHub push és Netlify-feltöltés tilos. Commithoz, GitHub-feltöltéshez és Netlify-közzétételhez külön előzetes felhasználói engedély szükséges; a weboldal elkészülte sem jelent engedélyt. Későbbi publikálás előtt az aktuális célfiókot és projektet is egyeztetni kell, mert a felhasználó másik fiókot is választhat. A jelenlegi módosítás kizárólag helyben mentendő.
+
+## Aloldalak visszavonva – 2026-10-22
+
+A felhasználó visszavonta az aloldalak készítését. Visszaállt az eredeti index.html koncepcióválasztó és az egyoldalas koncepcio-3-szabad-ter.html alapú build. Az aloldalas kísérlet külön helyi ZIP-ben megőrzött, nem aktív. A kizárólag helyi mentés szabályai változatlanok; nincs commit vagy feltöltés.
+
+## Helyi PageSpeed-optimalizálás – 2026-10-22
+
+A kiválasztott egyoldalas forrás reszponzív WebP img srcset változatokat használ (images/optimalizalt/*-320w, -480w, -768w, -1024w; logó 96w/192w). A szólogó koordinátái érintetlenek. Google Fonts nem blokkoló preload + noscript fallback, Tailwind CDN nélkül. Világosabb másodlagos szövegek a kontraszt miatt, méretet figyelő fejléc szinkron layoutolvasás nélkül. Build a srcset fájlokat is másolja. Részletek: .webprojekt/pagespeed-optimalizalas-2026-10-22.md. Minden csak helyben mentett; az éles pontszám nincs újramérve, commit és feltöltés tilos külön engedély nélkül.
+
+## Kötelező jelzés a véglegesítéskor – PageSpeed
+
+Amikor a felhasználó véglegesíteni vagy publikálni szeretné a honlapot, külön emlékeztesd a teljesítményellenőrzésre. Élesítés előtt helyi Lighthouse/mobilos teszt, javítás és ellenőrzés szükséges; a PageSpeed Insights nyilvánosan elérhető URL-t igényel, ezért az aktuális helyi változatot csak engedélyezett, elérhető előnézeten vagy a későbbi éles közzététel után tudja mérni. A régi éles URL újramérése nem igazolja a még helyi javításokat. Az elérhető előnézet PageSpeed-eredménye alapján finomíts, majd külön publikálási engedéllyel élesíts; ha nincs ilyen előnézet, ezt jelezd és az engedélyezett élesítés után végezz PageSpeed-utóellenőrzést. Sem a tesztelési emlékeztető, sem a véglegesítés említése nem engedélyez commitot, push-t vagy telepítést.
+
+## Fedett fejléc és statikus nyitóelemek – 2026-11-27
+
+A fejléc görgetéskor felül marad (sticky), 80%-os fedettségű sötétszürke háttérrel (rgba(45,45,45,.8)), 2 px háttérhomályosítással. A szójel és a nyitófotók azonnal láthatók, belépőanimáció nélkül. A képekhez nincs egérmutatóra nagyítás. A fejléc ismét áttetsző, de erősebb fedéssel. A szójel és a fotók statikusak maradnak. A módosítás kizárólag helyben mentendő.

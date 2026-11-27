@@ -16,6 +16,9 @@ await writeFile(path.join(output, 'index.html'), html);
 
 const copied = new Set();
 const candidates = [...html.matchAll(/(?:src|href)="([^"]+)"|url\(["']?([^\)"']+)["']?\)/g)];
+for (const set of html.matchAll(/srcset="([^"]+)"/g)) {
+  for (const candidate of set[1].split(',')) candidates.push([null, candidate.trim().split(/\s+/)[0]]);
+}
 for (const match of candidates) {
   const reference = match[1] || match[2];
   if (/^(?:https?:|mailto:|data:|#)/.test(reference)) continue;
